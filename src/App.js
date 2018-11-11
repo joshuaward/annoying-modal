@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="intro">
-					<h2 className="title">wait for it</h2>
+					<h2 className="title">This is an annoying modal.</h2>
 					<span className="hint tooltip tooltip-top" data-tooltip="Hover outside of the window.">
 						Hint
 					</span>
