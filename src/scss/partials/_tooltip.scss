@@ -21,7 +21,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		transform: translateX(-50%);
-		transition: 0.25s ease;
+		transition: 0.25s ease-in-out;
 		opacity: 0;
 		visibility: hidden;
 	}

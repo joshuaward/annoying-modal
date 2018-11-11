@@ -43,13 +43,15 @@ annoyingModal.addEventListener('click', () => {
 	annoyingModal_wrapper.remove();
 })
 
-// fire modal from hidden button
-// const hiddenTrigger = document.querySelector('.hidden-trigger');
-// hiddenTrigger.addEventListener('click', () => {
-// 	//document.createElement('AnnoyingModal');
-// 	annoyingModal.classList.toggle('show');
-// 	annoyingModal_wrapper.classList.toggle('show');
-// })
+// peeking hipster
+const hipster = document.querySelector('.hipster');
+const hintHover = document.querySelector('.hint');
+hintHover.addEventListener('mouseenter', () => {
+	hipster.classList.add('show');
+})
+hintHover.addEventListener('mouseleave', () => {
+	hipster.classList.remove('show');
+})
 
 // reload button
 const reloadButton = document.querySelector('.reload-button');

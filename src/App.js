@@ -20,9 +20,10 @@ class App extends Component {
 				<button className="reload-button tooltip tooltip-right" data-tooltip="refresh page">
 					<i className="fas fa-sync-alt"></i>
 				</button>
-				<a href="https://codepen.io/joshuaward/pens/public/" className="external-link tooltip tooltip-left" data-tooltip="Codepen" target="_blank">
+				<a href="https://codepen.io/joshuaward/pens/public/" className="external-link tooltip tooltip-left" data-tooltip="Codepen" target="_blank" rel="noopener noreferrer">
 					<i className="fab fa-codepen"></i>
 				</a>
+				<div className="hipster"></div>
       </div>
     );
   }

@@ -34,7 +34,18 @@ body {
 	background-size: 400% 400%;
 	border: 20px solid white;
 	animation: Gradient 10s ease infinite;
+	overflow: hidden;
 	z-index: 0;
+	&:before {
+		position: absolute;
+		content: '';
+		bottom: -20px;
+		left: 0;
+		width: 100%;
+		height: 20px;
+		background-color: white;
+		z-index: 99;
+	}
 }
 
 @keyframes Gradient {
@@ -103,5 +114,22 @@ a {
 	}
 	i {
 		transition: 0.5s;
+	}
+}
+
+.hipster {
+	position: absolute;
+	bottom: -13%;
+	right: 20%;
+	width: 100px;
+	height: 120px;
+	background-image: url('http://mentalsociety.com/images/hipster.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: 0.5s ease-in-out;
+	z-index: -1;
+	&.show {
+		bottom: -7.5%;
 	}
 }
