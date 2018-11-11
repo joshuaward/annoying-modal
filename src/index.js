@@ -44,12 +44,12 @@ annoyingModal.addEventListener('click', () => {
 })
 
 // fire modal from hidden button
-const hiddenTrigger = document.querySelector('.hidden-trigger');
-hiddenTrigger.addEventListener('click', () => {
-	document.createElement('AnnoyingModal');
-	annoyingModal.classList.toggle('show');
-	annoyingModal_wrapper.classList.toggle('show');
-})
+// const hiddenTrigger = document.querySelector('.hidden-trigger');
+// hiddenTrigger.addEventListener('click', () => {
+// 	//document.createElement('AnnoyingModal');
+// 	annoyingModal.classList.toggle('show');
+// 	annoyingModal_wrapper.classList.toggle('show');
+// })
 
 // reload button
 const reloadButton = document.querySelector('.reload-button');

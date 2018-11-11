@@ -1,0 +1,89 @@
+button {
+	appearance: none;
+	border: none;
+	transition: 0.25s;
+	cursor: pointer;
+	&.button {
+		margin: 0 0 0 5px;
+		padding: 10px 30px;
+		border-radius: 5px;
+		color: whitesmoke;
+		font-size: 14px;
+	}
+	&.yes {
+		background-color: $success;
+		&:hover {
+			background-color: lighten($success,5%);;
+		}
+	}
+	&.no {
+		background-color: $failure;
+		&:hover {
+			background-color: lighten($failure,5%);;
+		}
+	}
+	&.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		background-color: transparent;
+		color: #333;
+		z-index: 1;
+		&:hover {
+			i {
+				transform: rotate(180deg);
+			}
+		}
+		i {
+			transition: 0.25s ease;
+		}
+	}
+	&.reload-button {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		background-color: rgba($black,0.2);
+		border-radius: 50%;
+		color: $white;
+		&:hover {
+			background-color: rgba($black,0.2);
+			i {
+				transform: rotate(360deg);
+			}
+		}
+		i {
+			transition: 0.5s;
+		}
+	}
+	&.hidden-trigger {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		background-color: rgba($black,0.2);
+		border: none;
+		border-radius: 50%;
+		font-size: 18px;
+		opacity: 0;
+		transition: 0.25s linear;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
